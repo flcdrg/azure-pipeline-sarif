@@ -12,7 +12,7 @@ steps:
 #     targetPath: eslint.sarif
 
 - script: |
-    echo "##vso[artifact.upload containerfolder=CodeAnalysisLogs;artifactname=eslint.sarif]$(Build.SourcesDirectory)/eslint.sarif"
+    echo "##vso[artifact.upload containerfolder=CodeAnalysisLogs;artifactname=CodeAnalysisLogs]$(Build.SourcesDirectory)/eslint.sarif"
 
 # - task: UseDotNet@2
 #   displayName: 'Use dotnet'
